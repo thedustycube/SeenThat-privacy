@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SeenThat</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --accent-color: #2563eb;
+            --code-bg: #f1f5f9;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0b0f17;
+                --card-bg: #111827;
+                --text-main: #f3f4f6;
+                --text-muted: #9ca3af;
+                --border-color: #1f2937;
+                --accent-color: #3b82f6;
+                --code-bg: #1e293b;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            padding: 40px 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 36px 32px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--text-muted);
+        }
+
+        .metadata-box {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .metadata-box strong {
+            color: var(--text-main);
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            background-color: var(--code-bg);
+            color: var(--text-main);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+            border: 1px solid var(--border-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 28px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px 8px;
+            }
+            .container {
+                padding: 24px 18px;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>Privacy Policy for SeenThat</h1>
+        
+        <div class="metadata-box">
+            <strong>Effective Date:</strong> November 3, 2026<br>
+            <strong>App Name:</strong> SeenThat<br>
+            <strong>Package Name:</strong> com.dustycube.seenthat<br>
+            <strong>Developer:</strong> dustycube
+        </div>
+
+        <p>dustycube/The Cube Collective (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) operates the <strong>SeenThat</strong> mobile application (the &ldquo;App&rdquo;). This Privacy Policy explains what information we collect, how we use and protect it, and how you can access or permanently delete your account and data.</p>
+
+        <hr>
+
+        <h2>1. Information We Collect</h2>
+
+        <h3>A. Account &amp; Authentication Data</h3>
+        <p>When you create an account or sign in to sync your watchlist across devices, we use <strong>Google Firebase Authentication</strong>:</p>
+        <ul>
+            <li><strong>Email &amp; Password Sign-In:</strong> We collect your email address and an encrypted authentication credential managed by Firebase Authentication, along with a unique User ID (<code>UID</code>).</li>
+            <li><strong>Google Sign-In:</strong> If you choose to sign in with Google via Android Credential Manager, Firebase Authentication receives your Google account email address, display name, and unique User ID (<code>UID</code>). Your display name is only used to identify your signed-in session in the App&rsquo;s Settings screen and is not stored in our application database.</li>
+        </ul>
+
+        <h3>B. User-Generated App Content (Watchlist, Progress &amp; Ratings)</h3>
+        <p>When you are signed in, the App stores and syncs the entertainment tracking data you create in <strong>Google Cloud Firestore</strong> and caches it locally on your device using an on-device Room SQLite database:</p>
+        <ul>
+            <li>Movies and TV shows added to your Watchlist and their watch statuses (<em>Watching, Rewatching, Planning, Completed, Paused, Dropped</em>).</li>
+            <li>Season and episode watch progress.</li>
+            <li>Personal ratings (1&ndash;10 scale) that you assign to movies and TV episodes.</li>
+        </ul>
+
+        <h3>C. In-App Feedback &amp; Bug Reports (Optional)</h3>
+        <p>If you voluntarily submit feedback or a bug report through the <strong>Feedback &amp; Bug Reports</strong> form in Settings:</p>
+        <ul>
+            <li>We collect the feedback category, priority, subject, and message you type.</li>
+            <li><strong>Optional Screenshots:</strong> If you choose to attach screenshots using the Android System Photo Picker, only the specific image(s) you select (up to 3 images) are included with your report. SeenThat does <strong>not</strong> request or have access to your device&rsquo;s photo library or storage.</li>
+            <li><strong>Diagnostic Metadata:</strong> To help us reproduce and fix bugs, feedback submissions automatically include your account email and <code>UID</code>, app version, Android OS version, and device model name.</li>
+            <li><strong>Cooldown Metadata:</strong> We store a timestamp of your most recent feedback submission in Cloud Firestore to enforce a 30-day cooldown between submissions.</li>
+        </ul>
+
+        <hr>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the information collected strictly for the following purposes:</p>
+        <ul>
+            <li><strong>App Functionality &amp; Cloud Sync:</strong> To save, synchronize, and restore your watchlist, episode progress, and personal ratings across your devices.</li>
+            <li><strong>Account Management:</strong> To authenticate your identity, verify your email address, process password resets, and allow you to manage or delete your account.</li>
+            <li><strong>Support &amp; App Improvement:</strong> To review and resolve bug reports, UI issues, and feature requests submitted through our feedback hub.</li>
+        </ul>
+        <p>We <strong>do not</strong> sell, rent, or share your personal data with third-party advertisers, data brokers, or marketing networks. The App contains no third-party advertising SDKs.</p>
+
+        <hr>
+
+        <h2>3. Data Security &amp; Encryption</h2>
+        <ul>
+            <li><strong>Encryption in Transit:</strong> All data transmitted between the App and our backend services (Firebase Authentication, Cloud Firestore, and the TMDB API) is encrypted in transit using industry-standard HTTPS / TLS protocols. Cleartext (unencrypted HTTP) traffic is strictly disabled.</li>
+            <li><strong>On-Device Security:</strong> Local session tokens and identity preferences are stored using AndroidX <code>EncryptedSharedPreferences</code> backed by the Android Keystore system.</li>
+            <li><strong>Access Control:</strong> Your cloud watchlist, episode progress, and ratings are protected by strict Firebase Security Rules that restrict read and write access exclusively to your authenticated User ID (<code>UID</code>).</li>
+        </ul>
+
+        <hr>
+
+        <h2>4. Third-Party Services</h2>
+        <p>SeenThat relies on the following trusted third-party service providers to operate:</p>
+        <ul>
+            <li><strong>Google Firebase (Authentication &amp; Cloud Firestore):</strong> Used for secure account authentication and cloud database synchronization. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
+            <li><strong>The Movie Database (TMDB) API:</strong> Used to fetch public movie and TV show titles, posters, release dates, cast/crew details, and synopses. Your personal account information is never sent to TMDB. <em>SeenThat uses the TMDB API but is not endorsed or certified by TMDB.</em> (<a href="https://www.themoviedb.org/privacy-policy" target="_blank" rel="noopener noreferrer">TMDB Privacy Policy</a>)</li>
+        </ul>
+
+        <hr>
+
+        <h2>5. Data Retention &amp; Account Deletion</h2>
+        <p>We retain your account profile and synced watchlist data only for as long as your account remains active. You can permanently delete your account and all associated cloud and local data at any time.</p>
+
+        <h3>Option 1: Instant In-App Account &amp; Data Deletion (Recommended)</h3>
+        <ol>
+            <li>Open the <strong>SeenThat</strong> app and sign in to your account.</li>
+            <li>Go to the <strong>Settings</strong> tab.</li>
+            <li>In the <strong>Account &amp; Cloud Sync</strong> card at the top, tap the <strong>Delete Account</strong> button.</li>
+            <li>Read the warning prompt, tap <strong>Confirm</strong>, type <code>delete-my-account</code>, and tap <strong>Confirm</strong> again (re-verifying your Google or password credential if prompted).</li>
+            <li><strong>What happens immediately:</strong>
+                <ul>
+                    <li>All of your cloud data in Firestore (watchlist items, season progress, watched episodes, and media ratings) is permanently erased.</li>
+                    <li>Your local on-device database and session data are wiped.</li>
+                    <li>Your Firebase Authentication profile (<code>email</code>, <code>displayName</code>, and <code>UID</code>) is permanently deleted.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Option 2: Request Account Deletion via Web / Email</h3>
+        <p>If you have already uninstalled the App or cannot access it, you may request permanent deletion of your account and all associated data by emailing us at <a href="mailto:cubedusty@gmail.com">cubedusty@gmail.com</a> from the email address associated with your SeenThat account (or by providing your account email / <code>UID</code>) with the subject line <strong>&ldquo;Account Deletion Request - SeenThat&rdquo;</strong>. We will permanently delete your account profile and all associated database records within 7 business days.</p>
+
+        <hr>
+
+        <h2>6. Device Permissions</h2>
+        <p>SeenThat follows a strict least-privilege permission model:</p>
+        <ul>
+            <li><strong>Internet (<code>INTERNET</code> &amp; <code>ACCESS_NETWORK_STATE</code>):</strong> Required to fetch movie/TV metadata from TMDB and sync your watchlist with Firebase.</li>
+            <li><strong>Notifications (<code>POST_NOTIFICATIONS</code> &mdash; Optional):</strong> Requested only when you choose to pin a TV season so you can track and increment your episode progress (<code>+1</code>) directly from your Android notification shade. You can revoke notification permission at any time in your device settings.</li>
+        </ul>
+
+        <hr>
+
+        <h2>7. Children&rsquo;s Privacy</h2>
+        <p>SeenThat is not directed to children under the age of 13 (or the minimum age required in your jurisdiction), and we do not knowingly collect personal information from children under 13. If we become aware that we have inadvertently collected personal data from a child under 13, we will promptly delete it.</p>
+
+        <hr>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our features or legal requirements. Any updates will be posted on this page with an updated &ldquo;Effective Date.&rdquo;</p>
+
+        <hr>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:cubedusty@gmail.com">cubedusty@gmail.com</a></p>
+    </main>
+</body>
+</html>
